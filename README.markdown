@@ -16,16 +16,16 @@ __You will submit 2 runs with the data specified below.
 
 __Run #1 - Input File and Sample Output__
 
-A:3  
-B:1  
-C:2  
-D:2  
-
-char			A	B	C	D  
-frequency		3	1	2	2  
-Huffman Code	1	000	001	01  
-Lavg = 2.0  
-CR = 0.75  
+	A:3  
+	B:1  
+	C:2  
+	D:2  
+	
+	char			A	B	C	D  
+	frequency		3	1	2	2  
+	Huffman Code	1	000	001	01  
+	Lavg = 2.0  
+	CR = 0.75  
 
 __Run #2 - Input File__
 
