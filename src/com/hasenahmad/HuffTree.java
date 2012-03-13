@@ -19,10 +19,11 @@ public class HuffTree{
 			stacky.push(itr.next());
 		}
 		System.out.println(stacky);
-		while(!stacky.empty())
-		Collections.sort(stacky);
-		System.out.println(stacky);
-		
+		while(stacky.size() > 2){
+			Collections.sort(stacky);
+			System.out.println(stacky);
+			stacky.push(combineLow(stacky.pop(), stacky.pop()));
+		}
 		stacky.push(combineLow(stacky.pop(), stacky.pop()));
 	}
 
