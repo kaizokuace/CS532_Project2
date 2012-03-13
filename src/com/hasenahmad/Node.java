@@ -5,6 +5,7 @@ public class Node implements Comparable<Node> {
 	private int frequency;
 	private Node left;
 	private Node right;
+	private String code;
 	public Node(char value, int frequency){
 		this.setValue(value);
 		this.setFrequency(frequency);
@@ -42,6 +43,14 @@ public class Node implements Comparable<Node> {
 		this.right = right;
 	}
 
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
 	@Override
 	public int compareTo(Node o) {
 		if (getFrequency() > ((Node)o).getFrequency())
@@ -54,6 +63,6 @@ public class Node implements Comparable<Node> {
 
 	@Override
 	public String toString() {
-		return " " + value + ":" + frequency + " ";
+		return " " + value + ":" + frequency + " " + code;
 	}
 }

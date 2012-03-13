@@ -31,7 +31,19 @@ public class HuffTree{
 		return newRoot;
 	}
 	
+	public Node getRoot(){
+		return stacky.peek();
+	}
+	
+	public void getCode(Node T, String S){
+	    if (T.getValue() != '*') {
+	        //the code for the character in the node T is now in string S, 
+	        //so tuck this info away somewhere;
+	    	T.setCode(S);
+	        return;
+	    }
 
-	
-	
+	    getCode(T.getLeft(), S + "0");
+	    getCode(T.getRight(), S + "1");
+	}
 }

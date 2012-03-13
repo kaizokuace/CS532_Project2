@@ -12,6 +12,9 @@ public class HuffPuff {
 		listy.add(new Node('C', 2));
 		listy.add(new Node('D', 2));
 		HuffTree huff = new HuffTree(listy);
+		String string = "";
+		huff.getCode(huff.getRoot(), string);
+		System.out.println("Listy: " + listy);
 	}
 
 }
