@@ -12,7 +12,7 @@ public class HuffPuff {
 		listy.add(new Node('C', 2));
 		listy.add(new Node('D', 2));
 		HuffTree huff = new HuffTree(listy);
-		System.out.println("Listy: " + listy);
+		huff.print();
 		
 		listy2.add(new Node('A', 20));
 		listy2.add(new Node('B', 2));
@@ -26,7 +26,7 @@ public class HuffPuff {
 		listy2.add(new Node('J', 6));
 		listy2.add(new Node('K', 100));
 		HuffTree huff2 = new HuffTree(listy2);
-		System.out.println("Listy: " + listy2);
+		huff2.print();
 	}
 
 }
