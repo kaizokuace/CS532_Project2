@@ -3,13 +3,7 @@ package com.hasenahmad;
 import java.util.*;
 
 public class HuffTree{
-	//take in an array of Value class objects (this contains the value and frequency data pair)
-	//sort this array from low to high
-	//take the 2 lowest
-	
 	//pop 2, combine, push back, sort
-	//ArrayList<Node> listy = new ArrayList<Node>();
-	//Collections.sort
 	private Stack<Node> stacky;
 	
 	public HuffTree(ArrayList<Node> nodeList){
@@ -21,10 +15,13 @@ public class HuffTree{
 		System.out.println(stacky);
 		while(stacky.size() > 2){
 			Collections.sort(stacky);
+			Collections.reverse(stacky);
 			System.out.println(stacky);
 			stacky.push(combineLow(stacky.pop(), stacky.pop()));
 		}
 		stacky.push(combineLow(stacky.pop(), stacky.pop()));
+			System.out.println(stacky);
+
 	}
 
 	private Node combineLow(Node a, Node b) {

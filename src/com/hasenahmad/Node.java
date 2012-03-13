@@ -51,4 +51,9 @@ public class Node implements Comparable<Node> {
 		else
 			return 0;
 	}
+
+	@Override
+	public String toString() {
+		return " " + value + ":" + frequency + " ";
+	}
 }
