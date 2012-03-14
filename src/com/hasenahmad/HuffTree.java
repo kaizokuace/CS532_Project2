@@ -43,6 +43,8 @@ public class HuffTree{
 	}
 	/*--------------------Public Methods--------------------*/
 	public void print(){
-		System.out.println("Huffman Coding: " + list);
+		//System.out.println("Huffman Coding: " + list);
+		for(Node x : list)
+			System.out.println(x);
 	}
 }
