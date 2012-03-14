@@ -58,7 +58,7 @@ public class HuffTree{
 		for(Node x : list)
 			System.out.format("%-14c%-14d%-10s \n", x.getValue(), x.getFrequency(), x.getCode());
 		NumberFormat percentFormater = NumberFormat.getPercentInstance();
-		System.out.format("L avg: %.2f \n", lavg);
+		System.out.format("Lavg: %.2f \n", lavg);
 		System.out.println("CR: " + percentFormater.format(cr));
 		System.out.println();
 	}
