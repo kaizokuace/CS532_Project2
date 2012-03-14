@@ -1,3 +1,8 @@
+/**
+ * @author Hasen Ahmad
+ * CS532 Project 2
+ * Huffman Coding
+ */
 package com.hasenahmad;
 
 public class Node implements Comparable<Node> {
