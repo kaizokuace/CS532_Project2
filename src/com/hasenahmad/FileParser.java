@@ -36,7 +36,7 @@ public class FileParser {
 			String value = scanner.next();
 			String frequency = scanner.next();
 			listy.add(new Node(value.charAt(0), Integer.parseInt(frequency)));
-			//log("Character is : " + quote(value.trim()) + ", and Frequency is : " + quote(frequency.trim()) );
+			//log("Character is : " + value + ", and Frequency is : " + frequency );
 		}
 		else {
 			log("Empty or invalid line. Unable to process.");
@@ -46,9 +46,4 @@ public class FileParser {
 	private static void log(Object aObject){
 		System.out.println(String.valueOf(aObject));
 	}  
-	@SuppressWarnings("unused")
-	private String quote(String aText){
-		String QUOTE = "'";
-		return QUOTE + aText + QUOTE;
-	}
 }

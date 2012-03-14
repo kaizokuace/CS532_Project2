@@ -13,7 +13,7 @@ public class Node implements Comparable<Node> {
 		this.setFrequency(frequency);
 	}
 	/*--------------------Get/Set--------------------*/
-	public int getValue() {return value;}
+	public char getValue() {return value;}
 	public void setValue(char value) {this.value = value;}
 
 	public int getFrequency() {return frequency;}
