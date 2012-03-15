@@ -24,12 +24,11 @@ public class HuffTree{
 		while(itr.hasNext()){
 			stacky.push(itr.next());
 		}
-		while(stacky.size() > 2){
+		while(stacky.size() > 1){
 			Collections.sort(stacky);
 			Collections.reverse(stacky);
 			stacky.push(combineLow(stacky.pop(), stacky.pop()));
 		}
-		stacky.push(combineLow(stacky.pop(), stacky.pop()));
 		getCode(stacky.peek(), stringy);
 		getLavg();
 	}
